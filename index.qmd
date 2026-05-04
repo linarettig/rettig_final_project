@@ -1,11 +1,13 @@
----
-title: "rettig_final_project"
----
-
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+title: "Lina Rettig"
+image: lina.pdf
+about: 
+  template: trestles
+  image-shape: rounded
+  image-width: 15em
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/catalina-rettig-422565253/
+    - text: GitHub
+      href: https://github.com/linarettig
+    - text: Email
+      href: rettig01@colostate.edu
