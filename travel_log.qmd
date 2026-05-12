@@ -1,0 +1,52 @@
+---
+title: "Travel Log"
+---
+
+# 📔 Field notes from the semester
+
+A quick tour of the **routes I actually traveled**—each stop is a real repo on my GitHub (`github.com/linarettig`). No epic novel… just stamps in the passport and postcards from the trail.
+
+---
+
+## 🧭 Expedition map (what I shipped)
+
+| Leg | Destination (repo) | What it is (one line) |
+|-----|----------------------|------------------------|
+| 🐛 Debug camp | [Debugging-AI](https://github.com/linarettig/Debugging-AI) | Learning to read errors, test ideas, and stop guessing. |
+| 🔁 Portage route | [APIs-Functions-Iteration](https://github.com/linarettig/APIs-Functions-Iteration) | Functions + iteration so I don’t copy-paste the same trip 50 times. |
+| 🗺️ Ridge trail | [Geospatial](https://github.com/linarettig/Geospatial) | Maps + spatial workflows: where “CRS panic” becomes “CRS confidence.” |
+| 🧪 Summit science | [Nested-Modeling](https://github.com/linarettig/Nested-Modeling) | Nested/modeling patterns for analyses that grow beyond one tidy table. |
+| 🌬️ Sky sector | [Colorado-Air-Quality-Index](https://github.com/linarettig/Colorado-Air-Quality-Index) | Air-quality indicators + plots that explain what the sky is “saying.” |
+| 🦌 Park pass | [r_finalproject](https://github.com/linarettig/r_finalproject) | National park visitation + air-quality patterns—people, places, atmosphere. |
+
+---
+
+## 🎒 What I packed (skills I reused everywhere)
+
+- **Wrangling:** `dplyr` habits that keep datasets from becoming a swamp  
+- **Viz:** `ggplot2` as my “camera” for evidence, not decoration  
+- **Space:** `sf` lessons (CRS is a mood, but you can manage it)  
+- **Automation:** `map()`-style thinking from the iteration repo  
+- **Storytelling:** Quarto + GitHub as proof I didn’t just *visit* the data—I left breadcrumbs  
+
+---
+
+## 🧳 Souvenirs (tiny memories, big lessons)
+
+- **Debugging-AI:** The trail teaches you that the fastest “shortcut” is a reproducible tiny example.  
+- **APIs-Functions-Iteration:** The moment functions clicked felt like upgrading from a paper map to GPS.  
+- **Geospatial:** My first “real map” souvenir—worth framing if CRS behaved.  
+- **Nested-Modeling:** When one model becomes many models… organization becomes survival gear.  
+- **Colorado-Air-Quality-Index:** Clear plots beat clever plots when someone asks “so what?”  
+- **r_finalproject:** Connecting *visitation* + *air* felt like linking two trails into one vista.  
+
+---
+
+## 🚧 “Next expedition” wishlist (not repos yet—just dreams)
+
+- Machine learning mountains (`tidymodels`)  
+- Shiny archipelago (if I want a true interactive island chain)  
+- R package desert oasis (bundle my favorite helpers)
+
+
+

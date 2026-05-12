@@ -1,0 +1,61 @@
+---
+title: "R Adventures"
+subtitle: "A Data Traveler's Journey — Lina Rettig"
+image: lina.png
+about:
+  template: trestles
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/catalina-rettig-422565253/
+    - text: GitHub
+      href: https://github.com/linarettig
+    - text: Email
+      href: mailto:rettig01@colostate.edu
+---
+
+# Data Traveler's Passport
+
+
+::: {.g-col-12 .g-col-md-8}
+**Name:** Lina Rettig
+**Citizenship:** Colorado State University  
+**Occupation:** Aspiring Data Explorer  
+**Issued:** Spring 2026
+**Valid Through:** Forever learning!
+
+**Visa Stamps Collected:**
+- ✅ Data Wrangling (dplyr territory)
+- ✅ Visualization Arts (ggplot2 province)
+- ✅ Statistical Modeling (Linear Regression region)
+- ✅ Spatial Analysis (sf kingdom)
+- ✅ Interactive Dashboards (Shiny islands)
+:::
+
+## My Journey Began...
+I started this adventure in ESS 523 thinking R was just another 
+programming language. Turns out, it's a whole world to explore! 
+From the treacherous forests of debugging to the peaks of 
+publication-ready plots, here's my travel diary.
+
+
+::: {.callout-note}
+## Why I Travel in Data
+I started learning R after I started my masters in Environmental Engineering with a focus on Indoor Air Quality. 
+:::
+
+## Travel Stats
+- **Countries Visited:** 12 of topics/projects
+- **Miles Coded:** ~6,000 lines of code
+- **Errors Survived:** Too many to count 😅
+- **Coffee Consumed:** Confidential
+- **Aha Moments:** Infinite breakthroughs
+
+## What's in My Backpack? 🎒
+**Essential Packages:**
+- `tidyverse` - My Swiss Army knife
+- `ggplot2` - My camera for capturing data beauty
+- `sf` - GPS for spatial adventures
+- `rstatix` - Medical kit for statistical emergencies
+- `plotly` - Interactive tour guide
+
+

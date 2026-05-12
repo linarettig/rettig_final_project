@@ -1,0 +1,131 @@
+---
+title: "Packing List"
+---
+
+# 🎒 What’s in my backpack
+
+The **light packing list**: the gear I actually carry after this semester, plus where I “proved it” on GitHub.
+
+---
+
+## Essential gear (core tools)
+
+### `dplyr` — compass
+
+```r
+data %>% 
+  dplyr::filter(!is.na(date)) %>% 
+  dplyr::mutate(month = lubridate::month(date)) %>% 
+  dplyr::group_by(site) %>% 
+  dplyr::summarise(mean_pm25 = mean(pm25, na.rm = TRUE), .groups = "drop")
+```
+
+### `ggplot2` — camera
+
+```r
+ggplot2::ggplot(data, ggplot2::aes(x, y, colour = group)) +
+  ggplot2::geom_point(alpha = 0.7) +
+  ggplot2::facet_wrap(~ season) +
+  ggplot2::labs(title = "Plain-language title", x = "X (units)", y = "Y (units)") +
+  ggplot2::theme_minimal()
+```
+
+### `purrr` — portage (carry more with less)
+
+```r
+purrr::map_dfr(paths, readr::read_csv, show_col_types = FALSE)
+```
+
+---
+
+## Field guides (links I actually open)
+
+- [R for Data Science (2e)](https://r4ds.hadley.nz/)  
+- [ggplot2 reference](https://ggplot2.tidyverse.org/)  
+- [Posit cheatsheets](https://posit.co/resources/cheatsheets/)  
+- `#rstats` + searching with words like `tidyverse`, `sf`, `reprex`
+
+---
+
+## Trail routines (checklists)
+
+### Wrangling
+
+- Import → inspect (`glimpse`, `summary`)  
+- Fix types + names  
+- Document missingness  
+- Filter → mutate → summarise  
+- Save + commit when it runs  
+
+### Visualization
+
+- Start with one geom  
+- Add encodings next  
+- Facet if needed  
+- Labels + units + caption  
+- Export the right size (slides vs report)  
+
+### Analysis
+
+- Plot before you “math”  
+- State the question + null (if testing)  
+- Check assumptions / diagnostics  
+- Write the takeaway in English first  
+
+---
+
+## Survival phrases (tiny snippets)
+
+### Read many CSVs
+
+```r
+paths <- list.files("data", pattern = "\\.csv$", full.names = TRUE)
+purrr::map_dfr(paths, readr::read_csv, show_col_types = FALSE)
+```
+
+### Quick grouped summary
+
+```r
+data |>
+  dplyr::group_by(site) |>
+  dplyr::summarise(n = dplyr::n(), mean = mean(value, na.rm = TRUE), .groups = "drop")
+```
+
+### “Why won’t my plot show?”
+
+```r
+print(my_plot) # sometimes needed depending on context
+```
+
+---
+
+## Emergency kit (fast fixes)
+
+- **`object not found`:** spelling + `ls()` + “did I run the chunk above?”  
+- **Join exploded rows:** check duplicate keys with `count(id, sort = TRUE)`  
+- **Forgotten package:** `library()` / install once, then restart if needed  
+
+---
+
+
+## Future packing (next trips)
+
+- [ ] `tidymodels` ridge hike  
+- [ ] Shiny archipelago (interactive apps)  
+- [ ] Time series trail (`tsibble`)  
+- [ ] Text-mining dunes (`tidytext`)  
+- [ ] Quarto “expedition publishing” upgrades  
+
+---
+
+## Travel wisdom (hard-won)
+
+::: {.callout-tip}
+## Lessons that survived contact with reality
+
+1. **Small rep first** — if it doesn’t work tiny, it won’t work huge.  
+2. **Commit when it runs** — future you sends thanks.  
+3. **Plot early** — your eyes are a model too.  
+4. **Read the error from the top** — it’s usually honest.  
+5. **Celebrate working chunks** — progress is cumulative.  
+:::

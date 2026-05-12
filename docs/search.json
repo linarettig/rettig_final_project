@@ -1,16 +1,170 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "travel_log.html",
+    "href": "travel_log.html",
+    "title": "Travel Log",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "A quick tour of the routes I actually traveled—each stop is a real repo on my GitHub (github.com/linarettig). No epic novel… just stamps in the passport and postcards from the trail.\n\n\n\n\n\n\nLeg\nDestination (repo)\nWhat it is (one line)\n\n\n\n\n🐛 Debug camp\nDebugging-AI\nLearning to read errors, test ideas, and stop guessing.\n\n\n🔁 Portage route\nAPIs-Functions-Iteration\nFunctions + iteration so I don’t copy-paste the same trip 50 times.\n\n\n🗺️ Ridge trail\nGeospatial\nMaps + spatial workflows: where “CRS panic” becomes “CRS confidence.”\n\n\n🧪 Summit science\nNested-Modeling\nNested/modeling patterns for analyses that grow beyond one tidy table.\n\n\n🌬️ Sky sector\nColorado-Air-Quality-Index\nAir-quality indicators + plots that explain what the sky is “saying.”\n\n\n🦌 Park pass\nr_finalproject\nNational park visitation + air-quality patterns—people, places, atmosphere.\n\n\n\n\n\n\n\n\nWrangling: dplyr habits that keep datasets from becoming a swamp\n\nViz: ggplot2 as my “camera” for evidence, not decoration\n\nSpace: sf lessons (CRS is a mood, but you can manage it)\n\nAutomation: map()-style thinking from the iteration repo\n\nStorytelling: Quarto + GitHub as proof I didn’t just visit the data—I left breadcrumbs\n\n\n\n\n\n\nDebugging-AI: The trail teaches you that the fastest “shortcut” is a reproducible tiny example.\n\nAPIs-Functions-Iteration: The moment functions clicked felt like upgrading from a paper map to GPS.\n\nGeospatial: My first “real map” souvenir—worth framing if CRS behaved.\n\nNested-Modeling: When one model becomes many models… organization becomes survival gear.\n\nColorado-Air-Quality-Index: Clear plots beat clever plots when someone asks “so what?”\n\nr_finalproject: Connecting visitation + air felt like linking two trails into one vista.\n\n\n\n\n\n\nMachine learning mountains (tidymodels)\n\nShiny archipelago (if I want a true interactive island chain)\n\nR package desert oasis (bundle my favorite helpers)"
+  },
+  {
+    "objectID": "travel_log.html#expedition-map-what-i-shipped",
+    "href": "travel_log.html#expedition-map-what-i-shipped",
+    "title": "Travel Log",
+    "section": "",
+    "text": "Leg\nDestination (repo)\nWhat it is (one line)\n\n\n\n\n🐛 Debug camp\nDebugging-AI\nLearning to read errors, test ideas, and stop guessing.\n\n\n🔁 Portage route\nAPIs-Functions-Iteration\nFunctions + iteration so I don’t copy-paste the same trip 50 times.\n\n\n🗺️ Ridge trail\nGeospatial\nMaps + spatial workflows: where “CRS panic” becomes “CRS confidence.”\n\n\n🧪 Summit science\nNested-Modeling\nNested/modeling patterns for analyses that grow beyond one tidy table.\n\n\n🌬️ Sky sector\nColorado-Air-Quality-Index\nAir-quality indicators + plots that explain what the sky is “saying.”\n\n\n🦌 Park pass\nr_finalproject\nNational park visitation + air-quality patterns—people, places, atmosphere."
+  },
+  {
+    "objectID": "travel_log.html#what-i-packed-skills-i-reused-everywhere",
+    "href": "travel_log.html#what-i-packed-skills-i-reused-everywhere",
+    "title": "Travel Log",
+    "section": "",
+    "text": "Wrangling: dplyr habits that keep datasets from becoming a swamp\n\nViz: ggplot2 as my “camera” for evidence, not decoration\n\nSpace: sf lessons (CRS is a mood, but you can manage it)\n\nAutomation: map()-style thinking from the iteration repo\n\nStorytelling: Quarto + GitHub as proof I didn’t just visit the data—I left breadcrumbs"
+  },
+  {
+    "objectID": "travel_log.html#souvenirs-tiny-memories-big-lessons",
+    "href": "travel_log.html#souvenirs-tiny-memories-big-lessons",
+    "title": "Travel Log",
+    "section": "",
+    "text": "Debugging-AI: The trail teaches you that the fastest “shortcut” is a reproducible tiny example.\n\nAPIs-Functions-Iteration: The moment functions clicked felt like upgrading from a paper map to GPS.\n\nGeospatial: My first “real map” souvenir—worth framing if CRS behaved.\n\nNested-Modeling: When one model becomes many models… organization becomes survival gear.\n\nColorado-Air-Quality-Index: Clear plots beat clever plots when someone asks “so what?”\n\nr_finalproject: Connecting visitation + air felt like linking two trails into one vista."
+  },
+  {
+    "objectID": "travel_log.html#next-expedition-wishlist-not-repos-yetjust-dreams",
+    "href": "travel_log.html#next-expedition-wishlist-not-repos-yetjust-dreams",
+    "title": "Travel Log",
+    "section": "",
+    "text": "Machine learning mountains (tidymodels)\n\nShiny archipelago (if I want a true interactive island chain)\n\nR package desert oasis (bundle my favorite helpers)"
+  },
+  {
+    "objectID": "travel_log.html#optional-tiny-r-postcard-delete-if-you-want-zero-code",
+    "href": "travel_log.html#optional-tiny-r-postcard-delete-if-you-want-zero-code",
+    "title": "Travel Log",
+    "section": "",
+    "text": "[1] \"Still traveling. Still committing. Still curious. 2026-05-12\""
+  },
+  {
+    "objectID": "home.html",
+    "href": "home.html",
+    "title": "R Adventures",
+    "section": "",
+    "text": "title: “Lina Rettig” image: lina.pdf about: template: trestles image-shape: rounded image-width: 15em links: - text: LinkedIn href: https://www.linkedin.com/in/catalina-rettig-422565253/ - text: GitHub href: https://github.com/linarettig - text: Email href: rettig01@colostate.edu"
+  },
+  {
+    "objectID": "map.html",
+    "href": "map.html",
+    "title": "Adventure Map",
+    "section": "",
+    "text": "Air and AtmosphereSpatial frontier🔧 Code craft & automation💧 Dashboard bay\n\n\nRepos\n\nColorado-Air-Quality-Index\n\nr_finalproject\n\nSkills: wrangling, visualization, exploratory anaylsis\nDifficulty: ⭐⭐⭐\n\n\nRepos - Geospatial\nSkills: sf, maps, CRS discipline\nDifficulty: ⭐⭐⭐⭐\n\n\nRepos - Debugging-AI\n- APIs-Functions-Iteration - Nested-Modeling\nSkills: debugging, functions, iteration, modeling\nDifficulty: ⭐⭐⭐⭐\n\n\nRepos - h2o-dashdboard\nSkills: dashboards, summarizing results\nDifficulty: ⭐⭐⭐\n\n\n\n\n\n\n\nMachine learning mountains\n\nShiny app archipelago\n\nR package development desert"
+  },
+  {
+    "objectID": "map.html#destinations-by-region",
+    "href": "map.html#destinations-by-region",
+    "title": "Adventure Map",
+    "section": "",
+    "text": "Air and AtmosphereSpatial frontier🔧 Code craft & automation💧 Dashboard bay\n\n\nRepos\n\nColorado-Air-Quality-Index\n\nr_finalproject\n\nSkills: wrangling, visualization, exploratory anaylsis\nDifficulty: ⭐⭐⭐\n\n\nRepos - Geospatial\nSkills: sf, maps, CRS discipline\nDifficulty: ⭐⭐⭐⭐\n\n\nRepos - Debugging-AI\n- APIs-Functions-Iteration - Nested-Modeling\nSkills: debugging, functions, iteration, modeling\nDifficulty: ⭐⭐⭐⭐\n\n\nRepos - h2o-dashdboard\nSkills: dashboards, summarizing results\nDifficulty: ⭐⭐⭐"
+  },
+  {
+    "objectID": "map.html#coming-soon",
+    "href": "map.html#coming-soon",
+    "title": "Adventure Map",
+    "section": "",
+    "text": "Machine learning mountains\n\nShiny app archipelago\n\nR package development desert"
+  },
+  {
+    "objectID": "packing.html",
+    "href": "packing.html",
+    "title": "Packing List",
+    "section": "",
+    "text": "The light packing list: the gear I actually carry after this semester, plus where I “proved it” on GitHub.\n\n\n\n\n\ndata %&gt;% \n  dplyr::filter(!is.na(date)) %&gt;% \n  dplyr::mutate(month = lubridate::month(date)) %&gt;% \n  dplyr::group_by(site) %&gt;% \n  dplyr::summarise(mean_pm25 = mean(pm25, na.rm = TRUE), .groups = \"drop\")\n\n\n\nggplot2::ggplot(data, ggplot2::aes(x, y, colour = group)) +\n  ggplot2::geom_point(alpha = 0.7) +\n  ggplot2::facet_wrap(~ season) +\n  ggplot2::labs(title = \"Plain-language title\", x = \"X (units)\", y = \"Y (units)\") +\n  ggplot2::theme_minimal()\n\n\n\npurrr::map_dfr(paths, readr::read_csv, show_col_types = FALSE)\n\n\n\n\n\n\nR for Data Science (2e)\n\nggplot2 reference\n\nPosit cheatsheets\n\n#rstats + searching with words like tidyverse, sf, reprex\n\n\n\n\n\n\n\n\nImport → inspect (glimpse, summary)\n\nFix types + names\n\nDocument missingness\n\nFilter → mutate → summarise\n\nSave + commit when it runs\n\n\n\n\n\nStart with one geom\n\nAdd encodings next\n\nFacet if needed\n\nLabels + units + caption\n\nExport the right size (slides vs report)\n\n\n\n\n\nPlot before you “math”\n\nState the question + null (if testing)\n\nCheck assumptions / diagnostics\n\nWrite the takeaway in English first\n\n\n\n\n\n\n\n\npaths &lt;- list.files(\"data\", pattern = \"\\\\.csv$\", full.names = TRUE)\npurrr::map_dfr(paths, readr::read_csv, show_col_types = FALSE)\n\n\n\ndata |&gt;\n  dplyr::group_by(site) |&gt;\n  dplyr::summarise(n = dplyr::n(), mean = mean(value, na.rm = TRUE), .groups = \"drop\")\n\n\n\nprint(my_plot) # sometimes needed depending on context\n\n\n\n\n\n\nobject not found: spelling + ls() + “did I run the chunk above?”\n\nJoin exploded rows: check duplicate keys with count(id, sort = TRUE)\n\nForgotten package: library() / install once, then restart if needed\n\n\n\n\n\n\ntidymodels ridge hike\n\nShiny archipelago (interactive apps)\n\nTime series trail (tsibble)\n\nText-mining dunes (tidytext)\n\nQuarto “expedition publishing” upgrades\n\n\n\n\n\n\n\n\n\n\n\nTipLessons that survived contact with reality\n\n\n\n\nSmall rep first — if it doesn’t work tiny, it won’t work huge.\n\nCommit when it runs — future you sends thanks.\n\nPlot early — your eyes are a model too.\n\nRead the error from the top — it’s usually honest.\n\nCelebrate working chunks — progress is cumulative."
+  },
+  {
+    "objectID": "packing.html#essential-gear-core-tools",
+    "href": "packing.html#essential-gear-core-tools",
+    "title": "Packing List",
+    "section": "",
+    "text": "data %&gt;% \n  dplyr::filter(!is.na(date)) %&gt;% \n  dplyr::mutate(month = lubridate::month(date)) %&gt;% \n  dplyr::group_by(site) %&gt;% \n  dplyr::summarise(mean_pm25 = mean(pm25, na.rm = TRUE), .groups = \"drop\")\n\n\n\nggplot2::ggplot(data, ggplot2::aes(x, y, colour = group)) +\n  ggplot2::geom_point(alpha = 0.7) +\n  ggplot2::facet_wrap(~ season) +\n  ggplot2::labs(title = \"Plain-language title\", x = \"X (units)\", y = \"Y (units)\") +\n  ggplot2::theme_minimal()\n\n\n\npurrr::map_dfr(paths, readr::read_csv, show_col_types = FALSE)"
+  },
+  {
+    "objectID": "packing.html#field-guides-links-i-actually-open",
+    "href": "packing.html#field-guides-links-i-actually-open",
+    "title": "Packing List",
+    "section": "",
+    "text": "R for Data Science (2e)\n\nggplot2 reference\n\nPosit cheatsheets\n\n#rstats + searching with words like tidyverse, sf, reprex"
+  },
+  {
+    "objectID": "packing.html#trail-routines-checklists",
+    "href": "packing.html#trail-routines-checklists",
+    "title": "Packing List",
+    "section": "",
+    "text": "Import → inspect (glimpse, summary)\n\nFix types + names\n\nDocument missingness\n\nFilter → mutate → summarise\n\nSave + commit when it runs\n\n\n\n\n\nStart with one geom\n\nAdd encodings next\n\nFacet if needed\n\nLabels + units + caption\n\nExport the right size (slides vs report)\n\n\n\n\n\nPlot before you “math”\n\nState the question + null (if testing)\n\nCheck assumptions / diagnostics\n\nWrite the takeaway in English first"
+  },
+  {
+    "objectID": "packing.html#survival-phrases-tiny-snippets",
+    "href": "packing.html#survival-phrases-tiny-snippets",
+    "title": "Packing List",
+    "section": "",
+    "text": "paths &lt;- list.files(\"data\", pattern = \"\\\\.csv$\", full.names = TRUE)\npurrr::map_dfr(paths, readr::read_csv, show_col_types = FALSE)\n\n\n\ndata |&gt;\n  dplyr::group_by(site) |&gt;\n  dplyr::summarise(n = dplyr::n(), mean = mean(value, na.rm = TRUE), .groups = \"drop\")\n\n\n\nprint(my_plot) # sometimes needed depending on context"
+  },
+  {
+    "objectID": "packing.html#emergency-kit-fast-fixes",
+    "href": "packing.html#emergency-kit-fast-fixes",
+    "title": "Packing List",
+    "section": "",
+    "text": "object not found: spelling + ls() + “did I run the chunk above?”\n\nJoin exploded rows: check duplicate keys with count(id, sort = TRUE)\n\nForgotten package: library() / install once, then restart if needed"
+  },
+  {
+    "objectID": "packing.html#skills-passport-confidence-evidence",
+    "href": "packing.html#skills-passport-confidence-evidence",
+    "title": "Packing List",
+    "section": "",
+    "text": "Skill\nStars\nEvidence repo\n\n\n\n\nWrangling\n⭐⭐⭐⭐\nColorado-Air-Quality-Index, r_finalproject\n\n\nVisualization\n⭐⭐⭐⭐\nSame as above (your plots live in the repos / reports)\n\n\nFunctions + iteration\n⭐⭐⭐⭐\nAPIs-Functions-Iteration\n\n\nModeling / nesting\n⭐⭐⭐\nNested-Modeling\n\n\nSpatial\n⭐⭐⭐\nGeospatial\n\n\nDashboards\n⭐⭐⭐\nh2o-dashdboard\n\n\nDebugging\n⭐⭐⭐⭐⭐\nDebugging-AI + “real life”"
+  },
+  {
+    "objectID": "packing.html#future-packing-next-trips",
+    "href": "packing.html#future-packing-next-trips",
+    "title": "Packing List",
+    "section": "",
+    "text": "tidymodels ridge hike\n\nShiny archipelago (interactive apps)\n\nTime series trail (tsibble)\n\nText-mining dunes (tidytext)\n\nQuarto “expedition publishing” upgrades"
+  },
+  {
+    "objectID": "packing.html#travel-wisdom-hard-won",
+    "href": "packing.html#travel-wisdom-hard-won",
+    "title": "Packing List",
+    "section": "",
+    "text": "TipLessons that survived contact with reality\n\n\n\n\nSmall rep first — if it doesn’t work tiny, it won’t work huge.\n\nCommit when it runs — future you sends thanks.\n\nPlot early — your eyes are a model too.\n\nRead the error from the top — it’s usually honest.\n\nCelebrate working chunks — progress is cumulative."
+  },
+  {
+    "objectID": "passport.html",
+    "href": "passport.html",
+    "title": "R Adventures",
+    "section": "",
+    "text": "Name: Lina Rettig Citizenship: Colorado State University\nOccupation: Aspiring Data Explorer\nIssued: Spring 2026 Valid Through: Forever learning!\nVisa Stamps Collected: - ✅ Data Wrangling (dplyr territory) - ✅ Visualization Arts (ggplot2 province) - ✅ Statistical Modeling (Linear Regression region) - ✅ Spatial Analysis (sf kingdom) - ✅ Interactive Dashboards (Shiny islands)\n\n\n\nI started this adventure in ESS 523 thinking R was just another programming language. Turns out, it’s a whole world to explore! From the treacherous forests of debugging to the peaks of publication-ready plots, here’s my travel diary.\n\n\n\n\n\n\nNoteWhy I Travel in Data\n\n\n\nI started learning R after I started my masters in Environmental Engineering with a focus on Indoor Air Quality.\n\n\n\n\n\n\nCountries Visited: 12 of topics/projects\nMiles Coded: ~6,000 lines of code\nErrors Survived: Too many to count 😅\nCoffee Consumed: Confidential\nAha Moments: Infinite breakthroughs\n\n\n\n\nEssential Packages: - tidyverse - My Swiss Army knife - ggplot2 - My camera for capturing data beauty - sf - GPS for spatial adventures - rstatix - Medical kit for statistical emergencies - plotly - Interactive tour guide"
+  },
+  {
+    "objectID": "passport.html#my-journey-began",
+    "href": "passport.html#my-journey-began",
+    "title": "R Adventures",
+    "section": "",
+    "text": "I started this adventure in ESS 523 thinking R was just another programming language. Turns out, it’s a whole world to explore! From the treacherous forests of debugging to the peaks of publication-ready plots, here’s my travel diary.\n\n\n\n\n\n\nNoteWhy I Travel in Data\n\n\n\nI started learning R after I started my masters in Environmental Engineering with a focus on Indoor Air Quality."
+  },
+  {
+    "objectID": "passport.html#travel-stats",
+    "href": "passport.html#travel-stats",
+    "title": "R Adventures",
+    "section": "",
+    "text": "Countries Visited: 12 of topics/projects\nMiles Coded: ~6,000 lines of code\nErrors Survived: Too many to count 😅\nCoffee Consumed: Confidential\nAha Moments: Infinite breakthroughs"
+  },
+  {
+    "objectID": "passport.html#whats-in-my-backpack",
+    "href": "passport.html#whats-in-my-backpack",
+    "title": "R Adventures",
+    "section": "",
+    "text": "Essential Packages: - tidyverse - My Swiss Army knife - ggplot2 - My camera for capturing data beauty - sf - GPS for spatial adventures - rstatix - Medical kit for statistical emergencies - plotly - Interactive tour guide"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "rettig_final_project",
+    "title": "R Adventures",
     "section": "",
-    "text": "title: “Lina Rettig” image: lina.pdf about: template: trestles image-shape: rounded image-width: 15em links: - text: LinkedIn href: https://www.linkedin.com/in/catalina-rettig-422565253/ - text: GitHub href: https://github.com/linarettig - text: Email href: rettig01@colostate.edu"
+    "text": "Welcome to R Adventures. Open your Passport for the story, then the Adventure Map for an interactive map and tabbed links to your GitHub repos."
   }
 ]

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R Adventures</title>
+<title>Packing List – R Adventures</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -35,6 +70,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -72,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="custom.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -104,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Travel Log</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./packing.html"> 
+    <a class="nav-link active" href="./packing.html" aria-current="page"> 
 <span class="menu-text">Packing List</span></a>
   </li>  
 </ul>
@@ -118,43 +154,232 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#whats-in-my-backpack" id="toc-whats-in-my-backpack" class="nav-link active" data-scroll-target="#whats-in-my-backpack">🎒 What’s in my backpack</a>
+  <ul class="collapse">
+  <li><a href="#essential-gear-core-tools" id="toc-essential-gear-core-tools" class="nav-link" data-scroll-target="#essential-gear-core-tools">Essential gear (core tools)</a>
+  <ul class="collapse">
+  <li><a href="#dplyr-compass" id="toc-dplyr-compass" class="nav-link" data-scroll-target="#dplyr-compass"><code>dplyr</code> — compass</a></li>
+  <li><a href="#ggplot2-camera" id="toc-ggplot2-camera" class="nav-link" data-scroll-target="#ggplot2-camera"><code>ggplot2</code> — camera</a></li>
+  <li><a href="#purrr-portage-carry-more-with-less" id="toc-purrr-portage-carry-more-with-less" class="nav-link" data-scroll-target="#purrr-portage-carry-more-with-less"><code>purrr</code> — portage (carry more with less)</a></li>
+  </ul></li>
+  <li><a href="#field-guides-links-i-actually-open" id="toc-field-guides-links-i-actually-open" class="nav-link" data-scroll-target="#field-guides-links-i-actually-open">Field guides (links I actually open)</a></li>
+  <li><a href="#trail-routines-checklists" id="toc-trail-routines-checklists" class="nav-link" data-scroll-target="#trail-routines-checklists">Trail routines (checklists)</a>
+  <ul class="collapse">
+  <li><a href="#wrangling" id="toc-wrangling" class="nav-link" data-scroll-target="#wrangling">Wrangling</a></li>
+  <li><a href="#visualization" id="toc-visualization" class="nav-link" data-scroll-target="#visualization">Visualization</a></li>
+  <li><a href="#analysis" id="toc-analysis" class="nav-link" data-scroll-target="#analysis">Analysis</a></li>
+  </ul></li>
+  <li><a href="#survival-phrases-tiny-snippets" id="toc-survival-phrases-tiny-snippets" class="nav-link" data-scroll-target="#survival-phrases-tiny-snippets">Survival phrases (tiny snippets)</a>
+  <ul class="collapse">
+  <li><a href="#read-many-csvs" id="toc-read-many-csvs" class="nav-link" data-scroll-target="#read-many-csvs">Read many CSVs</a></li>
+  <li><a href="#quick-grouped-summary" id="toc-quick-grouped-summary" class="nav-link" data-scroll-target="#quick-grouped-summary">Quick grouped summary</a></li>
+  <li><a href="#why-wont-my-plot-show" id="toc-why-wont-my-plot-show" class="nav-link" data-scroll-target="#why-wont-my-plot-show">“Why won’t my plot show?”</a></li>
+  </ul></li>
+  <li><a href="#emergency-kit-fast-fixes" id="toc-emergency-kit-fast-fixes" class="nav-link" data-scroll-target="#emergency-kit-fast-fixes">Emergency kit (fast fixes)</a></li>
+  <li><a href="#future-packing-next-trips" id="toc-future-packing-next-trips" class="nav-link" data-scroll-target="#future-packing-next-trips">Future packing (next trips)</a></li>
+  <li><a href="#travel-wisdom-hard-won" id="toc-travel-wisdom-hard-won" class="nav-link" data-scroll-target="#travel-wisdom-hard-won">Travel wisdom (hard-won)</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="lina.png" class="about-image
-  rounded " style="width: 15em;">
+<main class="content" id="quarto-document-content">
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">R Adventures</h1>
-<p class="subtitle lead">A Data Traveler’s Journey — Lina Rettig</p>
+<h1 class="title">Packing List</h1>
 </div>
+
+
+
 <div class="quarto-title-meta">
+
+    
+  
+    
   </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="/passport.html" class="about-link" rel="" target="">
-     <span class="about-link-text">Passport</span>
-  </a>
-  <a href="/map.html" class="about-link" rel="" target="">
-     <span class="about-link-text">Adventure Map</span>
-  </a>
-  <a href="/travel_log.html" class="about-link" rel="" target="">
-     <span class="about-link-text">Travel log</span>
-  </a>
-  <a href="/packing.html" class="about-link" rel="" target="">
-     <span class="about-link-text">Packing List</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
 
 
-</main></div>
+<section id="whats-in-my-backpack" class="level1">
+<h1>🎒 What’s in my backpack</h1>
+<p>The <strong>light packing list</strong>: the gear I actually carry after this semester, plus where I “proved it” on GitHub.</p>
+<hr>
+<section id="essential-gear-core-tools" class="level2">
+<h2 class="anchored" data-anchor-id="essential-gear-core-tools">Essential gear (core tools)</h2>
+<section id="dplyr-compass" class="level3">
+<h3 class="anchored" data-anchor-id="dplyr-compass"><code>dplyr</code> — compass</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data <span class="sc">%&gt;%</span> </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(date)) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">month =</span> lubridate<span class="sc">::</span><span class="fu">month</span>(date)) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(site) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">mean_pm25 =</span> <span class="fu">mean</span>(pm25, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="ggplot2-camera" class="level3">
+<h3 class="anchored" data-anchor-id="ggplot2-camera"><code>ggplot2</code> — camera</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>ggplot2<span class="sc">::</span><span class="fu">ggplot</span>(data, ggplot2<span class="sc">::</span><span class="fu">aes</span>(x, y, <span class="at">colour =</span> group)) <span class="sc">+</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  ggplot2<span class="sc">::</span><span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  ggplot2<span class="sc">::</span><span class="fu">facet_wrap</span>(<span class="sc">~</span> season) <span class="sc">+</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  ggplot2<span class="sc">::</span><span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Plain-language title"</span>, <span class="at">x =</span> <span class="st">"X (units)"</span>, <span class="at">y =</span> <span class="st">"Y (units)"</span>) <span class="sc">+</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  ggplot2<span class="sc">::</span><span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="purrr-portage-carry-more-with-less" class="level3">
+<h3 class="anchored" data-anchor-id="purrr-portage-carry-more-with-less"><code>purrr</code> — portage (carry more with less)</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>purrr<span class="sc">::</span><span class="fu">map_dfr</span>(paths, readr<span class="sc">::</span>read_csv, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="field-guides-links-i-actually-open" class="level2">
+<h2 class="anchored" data-anchor-id="field-guides-links-i-actually-open">Field guides (links I actually open)</h2>
+<ul>
+<li><a href="https://r4ds.hadley.nz/">R for Data Science (2e)</a><br>
+</li>
+<li><a href="https://ggplot2.tidyverse.org/">ggplot2 reference</a><br>
+</li>
+<li><a href="https://posit.co/resources/cheatsheets/">Posit cheatsheets</a><br>
+</li>
+<li><code>#rstats</code> + searching with words like <code>tidyverse</code>, <code>sf</code>, <code>reprex</code></li>
+</ul>
+<hr>
+</section>
+<section id="trail-routines-checklists" class="level2">
+<h2 class="anchored" data-anchor-id="trail-routines-checklists">Trail routines (checklists)</h2>
+<section id="wrangling" class="level3">
+<h3 class="anchored" data-anchor-id="wrangling">Wrangling</h3>
+<ul>
+<li>Import → inspect (<code>glimpse</code>, <code>summary</code>)<br>
+</li>
+<li>Fix types + names<br>
+</li>
+<li>Document missingness<br>
+</li>
+<li>Filter → mutate → summarise<br>
+</li>
+<li>Save + commit when it runs</li>
+</ul>
+</section>
+<section id="visualization" class="level3">
+<h3 class="anchored" data-anchor-id="visualization">Visualization</h3>
+<ul>
+<li>Start with one geom<br>
+</li>
+<li>Add encodings next<br>
+</li>
+<li>Facet if needed<br>
+</li>
+<li>Labels + units + caption<br>
+</li>
+<li>Export the right size (slides vs report)</li>
+</ul>
+</section>
+<section id="analysis" class="level3">
+<h3 class="anchored" data-anchor-id="analysis">Analysis</h3>
+<ul>
+<li>Plot before you “math”<br>
+</li>
+<li>State the question + null (if testing)<br>
+</li>
+<li>Check assumptions / diagnostics<br>
+</li>
+<li>Write the takeaway in English first</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="survival-phrases-tiny-snippets" class="level2">
+<h2 class="anchored" data-anchor-id="survival-phrases-tiny-snippets">Survival phrases (tiny snippets)</h2>
+<section id="read-many-csvs" class="level3">
+<h3 class="anchored" data-anchor-id="read-many-csvs">Read many CSVs</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>paths <span class="ot">&lt;-</span> <span class="fu">list.files</span>(<span class="st">"data"</span>, <span class="at">pattern =</span> <span class="st">"</span><span class="sc">\\</span><span class="st">.csv$"</span>, <span class="at">full.names =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>purrr<span class="sc">::</span><span class="fu">map_dfr</span>(paths, readr<span class="sc">::</span>read_csv, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="quick-grouped-summary" class="level3">
+<h3 class="anchored" data-anchor-id="quick-grouped-summary">Quick grouped summary</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>data <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(site) <span class="sc">|&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">n =</span> dplyr<span class="sc">::</span><span class="fu">n</span>(), <span class="at">mean =</span> <span class="fu">mean</span>(value, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="why-wont-my-plot-show" class="level3">
+<h3 class="anchored" data-anchor-id="why-wont-my-plot-show">“Why won’t my plot show?”</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(my_plot) <span class="co"># sometimes needed depending on context</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="emergency-kit-fast-fixes" class="level2">
+<h2 class="anchored" data-anchor-id="emergency-kit-fast-fixes">Emergency kit (fast fixes)</h2>
+<ul>
+<li><strong><code>object not found</code>:</strong> spelling + <code>ls()</code> + “did I run the chunk above?”<br>
+</li>
+<li><strong>Join exploded rows:</strong> check duplicate keys with <code>count(id, sort = TRUE)</code><br>
+</li>
+<li><strong>Forgotten package:</strong> <code>library()</code> / install once, then restart if needed</li>
+</ul>
+<hr>
+</section>
+<section id="future-packing-next-trips" class="level2">
+<h2 class="anchored" data-anchor-id="future-packing-next-trips">Future packing (next trips)</h2>
+<ul class="task-list">
+<li><label><input type="checkbox"><code>tidymodels</code> ridge hike<br>
+</label></li>
+<li><label><input type="checkbox">Shiny archipelago (interactive apps)<br>
+</label></li>
+<li><label><input type="checkbox">Time series trail (<code>tsibble</code>)<br>
+</label></li>
+<li><label><input type="checkbox">Text-mining dunes (<code>tidytext</code>)<br>
+</label></li>
+<li><label><input type="checkbox">Quarto “expedition publishing” upgrades</label></li>
+</ul>
+<hr>
+</section>
+<section id="travel-wisdom-hard-won" class="level2">
+<h2 class="anchored" data-anchor-id="travel-wisdom-hard-won">Travel wisdom (hard-won)</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
- <!-- /main -->
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Lessons that survived contact with reality
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><strong>Small rep first</strong> — if it doesn’t work tiny, it won’t work huge.<br>
+</li>
+<li><strong>Commit when it runs</strong> — future you sends thanks.<br>
+</li>
+<li><strong>Plot early</strong> — your eyes are a model too.<br>
+</li>
+<li><strong>Read the error from the top</strong> — it’s usually honest.<br>
+</li>
+<li><strong>Celebrate working chunks</strong> — progress is cumulative.<br>
+</li>
+</ol>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

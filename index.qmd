@@ -1,13 +1,21 @@
-title: "Lina Rettig"
-image: lina.pdf
-about: 
+---
+title: "R Adventures"
+subtitle: "A Data Traveler's Journey — Lina Rettig"
+image: lina.png
+about:
   template: trestles
   image-shape: rounded
   image-width: 15em
   links:
-    - text: LinkedIn
-      href: https://www.linkedin.com/in/catalina-rettig-422565253/
-    - text: GitHub
-      href: https://github.com/linarettig
-    - text: Email
-      href: rettig01@colostate.edu
+    - text: Passport
+      href: passport.qmd
+    - text: Adventure Map
+      href: map.qmd
+    - text: Travel log 
+      href: travel_log.qmd
+    - text: Packing List
+      href: packing.qmd
+
+---
+
+

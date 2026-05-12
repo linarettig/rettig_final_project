@@ -1,0 +1,105 @@
+---
+title: "Adventure Map"
+---
+
+# Where I've Traveled
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+if (!requireNamespace("leaflet", quietly = TRUE)) {
+  knitr::asis_output(
+    "<p><em>Install <code>leaflet</code> to see the interactive map: <code>install.packages(\"leaflet\")</code></em></p>"
+  )
+} else {
+  library(leaflet)
+  lng <- c(
+    -104.9903,
+    -105.5217,
+    -105.2705,
+    -105.0844,
+    -104.7091,
+    -105.2211,
+    -106.0444
+  )
+  lat <- c(
+    39.7392,
+    40.3783,
+    40.0150,
+    40.5853,
+    40.4233,
+    39.7555,
+    39.6303
+  )
+  popup <- c(
+    "<b>Colorado Air Quality Index</b><br><a href='https://github.com/linarettig/Colorado-Air-Quality-Index' target='_blank' rel='noopener'>Colorado-Air-Quality-Index</a>",
+    "<b>National Park Visitation &amp; Air Quality</b><br><a href='https://github.com/linarettig/r_finalproject' target='_blank' rel='noopener'>r_finalproject</a>",
+    "<b>Geospatial</b><br><a href='https://github.com/linarettig/Geospatial' target='_blank' rel='noopener'>Geospatial</a>",
+    "<b>Debugging &amp; AI</b><br><a href='https://github.com/linarettig/Debugging-AI' target='_blank' rel='noopener'>Debugging-AI</a>",
+    "<b>APIs, Functions &amp; Iteration</b><br><a href='https://github.com/linarettig/APIs-Functions-Iteration' target='_blank' rel='noopener'>APIs-Functions-Iteration</a>",
+    "<b>Nesting &amp; Modeling</b><br><a href='https://github.com/linarettig/Nested-Modeling' target='_blank' rel='noopener'>Nested-Modeling</a>",
+    "<b>H₂O Dashboard</b><br><a href='https://github.com/linarettig/h2o-dashdboard' target='_blank' rel='noopener'>h2o-dashdboard</a>"
+  )
+  leaflet::leaflet() |>
+    leaflet::addTiles() |>
+    leaflet::addMarkers(lng = lng, lat = lat, popup = popup)
+}
+```
+
+## Destinations By Region 
+
+:::{.panel-tabset}
+
+## Air and Atmosphere 
+
+**Repos**
+
+- [Colorado-Air-Quality-Index](https://github.com/linarettig/Colorado-Air-Quality-Index)  
+- [r_finalproject](https://github.com/linarettig/r_finalproject)  
+
+**Skills:** wrangling, visualization, exploratory anaylsis
+
+**Difficulty:** ⭐⭐⭐  
+
+## Spatial frontier
+
+**Repos**
+- [Geospatial](https://github.com/linarettig/Geospatial)  
+
+**Skills:** `sf`, maps, CRS discipline  
+
+**Difficulty:** ⭐⭐⭐⭐  
+
+## 🔧 Code craft & automation
+
+**Repos**
+- [Debugging-AI](https://github.com/linarettig/Debugging-AI)  
+- [APIs-Functions-Iteration](https://github.com/linarettig/APIs-Functions-Iteration)
+- [Nested-Modeling](https://github.com/linarettig/Nested-Modeling)
+
+**Skills:** debugging, functions, iteration, modeling  
+
+**Difficulty:** ⭐⭐⭐⭐ 
+
+## 💧 Dashboard bay
+
+**Repos**
+- [h2o-dashdboard](https://github.com/linarettig/h2o-dashdboard) 
+
+**Skills:** dashboards, summarizing results  
+
+**Difficulty:** ⭐⭐⭐  
+
+:::
+
+## Coming Soon... 🚧
+- Machine learning mountains  
+- Shiny app archipelago  
+- R package development desert  
+
+
+
+
+
+
