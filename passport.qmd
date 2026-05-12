@@ -18,16 +18,26 @@ about:
 
 ::: {.g-col-12 .g-col-md-8}
 **Name:** Lina Rettig
+
 **Citizenship:** Colorado State University  
+
 **Occupation:** Aspiring Data Explorer  
+
 **Issued:** Spring 2026
+
 **Valid Through:** Forever learning!
 
+
 **Visa Stamps Collected:**
+
 - ✅ Data Wrangling (dplyr territory)
+
 - ✅ Visualization Arts (ggplot2 province)
+
 - ✅ Statistical Modeling (Linear Regression region)
+
 - ✅ Spatial Analysis (sf kingdom)
+
 - ✅ Interactive Dashboards (Shiny islands)
 :::
 
@@ -52,10 +62,15 @@ I started learning R after I started my masters in Environmental Engineering wit
 
 ## What's in My Backpack? 🎒
 **Essential Packages:**
+
 - `tidyverse` - My Swiss Army knife
+
 - `ggplot2` - My camera for capturing data beauty
+
 - `sf` - GPS for spatial adventures
+
 - `rstatix` - Medical kit for statistical emergencies
+
 - `plotly` - Interactive tour guide
 
 
